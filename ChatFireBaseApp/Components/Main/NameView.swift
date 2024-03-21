@@ -11,6 +11,7 @@ struct NameView: View {
     @State private var name = ""
     @State private var isRoomChat = false
     var body: some View {
+        Text("Tên để có thể hiển thị tên của bạn cho mọi người biết")
         TextField("Nhập tên của bạn", text: $name)
             .textFieldStyle(OvalTextFieldStyle())
             .padding([.leading,.trailing])

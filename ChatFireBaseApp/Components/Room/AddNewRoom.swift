@@ -15,7 +15,8 @@ struct AddNewRoom: View {
           NavigationView {
               VStack {
                   TextField("Nhập tên phòng", text: $name)
-                      .padding()
+                      .textFieldStyle(OvalTextFieldStyle())
+                      .padding([.leading,.trailing])
                   
                   Spacer()
               }

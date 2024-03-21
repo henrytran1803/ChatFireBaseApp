@@ -11,7 +11,7 @@ struct RoomView: View {
     @ObservedObject var viewModel = RoomManager()
     @State var isShowingBottom = false
     var body: some View {
-        NavigationView{
+        NavigationStack{
             List{
                 ForEach(viewModel.rooms, id: \.self){ room in
                     Text("\(room)")
@@ -22,12 +22,13 @@ struct RoomView: View {
             .onAppear {
                 viewModel.loadRooms()
             }
+            .toolbar{
+                Button(action: {add()}, label: {
+                        Image(systemName: "plus")
+                })
+            }
         }.navigationTitle("Room")
-        .toolbar{
-            Button(action: {add()}, label: {
-                    Image(systemName: "plus")
-            })
-        }
+        
         .sheet(isPresented: $isShowingBottom, content: {
             AddNewRoom(isOpenSheet: $isShowingBottom)
                 .presentationDetents([.height(500)])
