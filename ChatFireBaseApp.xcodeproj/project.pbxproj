@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D2459BFA2BAD1CF300AC0F51 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2459BF92BAD1CF300AC0F51 /* ChatModel.swift */; };
+		D2459BFD2BAD2FC900AC0F51 /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = D2459BFC2BAD2FC900AC0F51 /* ReadMe.md */; };
 		D275A28B2BABD5B4001D79D5 /* ChatFireBaseAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D275A28A2BABD5B4001D79D5 /* ChatFireBaseAppApp.swift */; };
 		D275A2912BABD5B6001D79D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D275A2902BABD5B6001D79D5 /* Assets.xcassets */; };
 		D275A2942BABD5B6001D79D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D275A2932BABD5B6001D79D5 /* Preview Assets.xcassets */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		D2459BF92BAD1CF300AC0F51 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		D2459BFB2BAD24EB00AC0F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D2459BFC2BAD2FC900AC0F51 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		D275A2872BABD5B4001D79D5 /* ChatFireBaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatFireBaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D275A28A2BABD5B4001D79D5 /* ChatFireBaseAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFireBaseAppApp.swift; sourceTree = "<group>"; };
 		D275A2902BABD5B6001D79D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		D275A27E2BABD5B4001D79D5 = {
 			isa = PBXGroup;
 			children = (
+				D2459BFC2BAD2FC900AC0F51 /* ReadMe.md */,
 				D275A2892BABD5B4001D79D5 /* ChatFireBaseApp */,
 				D275A29C2BABD5B6001D79D5 /* ChatFireBaseAppTests */,
 				D275A2A62BABD5B6001D79D5 /* ChatFireBaseAppUITests */,
@@ -352,6 +355,7 @@
 				D275A2CE2BABE0A1001D79D5 /* GoogleService-Info.plist in Resources */,
 				D275A2DE2BAC1C13001D79D5 /* Launch Screen.storyboard in Resources */,
 				D275A2912BABD5B6001D79D5 /* Assets.xcassets in Resources */,
+				D2459BFD2BAD2FC900AC0F51 /* ReadMe.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
