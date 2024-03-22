@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2459BFA2BAD1CF300AC0F51 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2459BF92BAD1CF300AC0F51 /* ChatModel.swift */; };
 		D275A28B2BABD5B4001D79D5 /* ChatFireBaseAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D275A28A2BABD5B4001D79D5 /* ChatFireBaseAppApp.swift */; };
 		D275A2912BABD5B6001D79D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D275A2902BABD5B6001D79D5 /* Assets.xcassets */; };
 		D275A2942BABD5B6001D79D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D275A2932BABD5B6001D79D5 /* Preview Assets.xcassets */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2459BF92BAD1CF300AC0F51 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		D2459BFB2BAD24EB00AC0F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D275A2872BABD5B4001D79D5 /* ChatFireBaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatFireBaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D275A28A2BABD5B4001D79D5 /* ChatFireBaseAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFireBaseAppApp.swift; sourceTree = "<group>"; };
 		D275A2902BABD5B6001D79D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 		D275A2892BABD5B4001D79D5 /* ChatFireBaseApp */ = {
 			isa = PBXGroup;
 			children = (
+				D2459BFB2BAD24EB00AC0F51 /* Info.plist */,
 				D275A2E12BAC1EBC001D79D5 /* UI */,
 				D275A2D52BAC0FFF001D79D5 /* Model */,
 				D275A2D12BAC0DE6001D79D5 /* Common */,
@@ -204,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				D275A2D62BAC100A001D79D5 /* room.swift */,
+				D2459BF92BAD1CF300AC0F51 /* ChatModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 				D275A2E02BAC1DE7001D79D5 /* NameView.swift in Sources */,
 				D275A2E32BAC1EC6001D79D5 /* button.swift in Sources */,
 				D275A2D42BAC0F63001D79D5 /* RoomView.swift in Sources */,
+				D2459BFA2BAD1CF300AC0F51 /* ChatModel.swift in Sources */,
 				D275A2D72BAC100A001D79D5 /* room.swift in Sources */,
 				D275A2CA2BABDAE9001D79D5 /* ChatView.swift in Sources */,
 				D275A2E52BAC2089001D79D5 /* textfield.swift in Sources */,
@@ -468,6 +474,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -525,6 +533,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -540,15 +550,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatFireBaseApp/Preview Content\"";
 				DEVELOPMENT_TEAM = YAH93RZF3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatFireBaseApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -569,15 +582,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatFireBaseApp/Preview Content\"";
 				DEVELOPMENT_TEAM = YAH93RZF3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatFireBaseApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

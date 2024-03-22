@@ -10,15 +10,20 @@ import SwiftUI
 struct RoomView: View {
     @ObservedObject var viewModel = RoomManager()
     @State var isShowingBottom = false
+    @State private var selectedRoom: String?
     var body: some View {
         NavigationStack{
             List{
-                ForEach(viewModel.rooms, id: \.self){ room in
-                    Text("\(room)")
-//                    Text(username)
-                }
+                ForEach(viewModel.rooms, id: \.self) { room in
+                   NavigationLink(
+                       destination: ChatView(room: room),
+                       tag: room,
+                       selection: $selectedRoom) {
+                           Text(room)
+                       }
+               }
                 .onDelete(perform: delete)
-            }
+            }.background(Color.pink)
             .onAppear {
                 viewModel.loadRooms()
             }
@@ -28,7 +33,7 @@ struct RoomView: View {
                 })
             }
         }.navigationTitle("Room")
-        
+            .background(Color.pink)
         .sheet(isPresented: $isShowingBottom, content: {
             AddNewRoom(isOpenSheet: $isShowingBottom)
                 .presentationDetents([.height(500)])
